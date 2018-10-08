@@ -1,0 +1,200 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title> Mada mada </title>
+		<link rel="stylesheet" type="text/css" href="styles/style.css"/>
+		<script type="text/javascript" src="scripts/script.js"></script>
+		<script type="text/javascript" src="scripts/jQuery.js"></script>
+	</head>
+	<body>
+		
+		<div id="modal-window" class="hidden">
+			<div class="modal-header">
+				<h4>area riservata</h4>
+				<button class="close-modal-window" onClick="closeModalWindow();">
+					close
+				</button>
+			</div>
+			<div class="modal-form">
+				<h5>accedi</h5>
+				<form>
+					<input type="text" placeholder="Email" class="text-field"/>
+					<input type="text" placeholder="Password" class="text-field"/>
+					<button class="ok-button">
+						accedi
+					</button>
+					<p class="form-text">Password dimenticata</p>
+				</form>
+			</div>
+			<div class="modal-form">
+				<h5>registrati</h5>
+				<form>
+					<input type="text" placeholder="Nome" class="text-field"/>
+					<input type="text" placeholder="Cognome" class="text-field"/>
+					<input type="text" placeholder="Email" class="text-field"/>
+					<input type="text" placeholder="Password" class="text-field"/>
+					<input type="checkbox" class="check"/>
+					<div class="agree-text">
+						Acconsento al trattamento dei dati
+					</div>
+					<input type="checkbox" class="check"/>
+					<div class="agree-text">
+						Mi iscrivo alla Newsletter
+					</div>
+					<button class="ok-button">
+						iscriviti
+					</button>
+				</form>
+			</div>
+		</div>
+
+		<div class="main">
+			<header>
+				<div class="modal-window-button" onclick="openModalWindow();">
+					area riservata
+				</div>
+				<div class="menu">
+					<div class="logo">
+						<img src="images/logo.png" alt="logo"/>
+					</div>
+					<nav>
+						<ul class="main-menu">
+							<li class="main-menu-link"><a href="#">home</a></li>
+							<li class="main-menu-link"><a href="#">azienda</a>
+								<ul>
+									<li><a href="#">storia</a></li>
+									<li><a href="#">mm design</a></li>
+									<li><a href="#">designer</a></li>
+									<li><a href="#">sertificazioni</a></li>
+								</ul>
+							</li>
+							<li class="main-menu-link"><a href="#">collezioni</a></li>
+							<li class="main-menu-link"><a href="#">news</a></li>
+							<li class="main-menu-link"><a href="#">contatti</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+			
+			<section id="slider">
+				<div class="headline">
+					<h1>lampadari contemporanei</h1>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor dolore
+					</p>
+				</div>
+				<div class="container">
+					<div class="slider-column hidden c1">
+						<h2>Stai pensando ad un progetto?</h2>
+						<p class="slider-text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor dolore
+						</p>
+						<p class="slider-footer-text">
+							Approfondisci
+						</p>
+					</div>
+					<div class="slider-column hidden c2">
+						<h2>Vi aspettiamo alla fiera Euroluce</h2>
+						<p class="slider-text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor dolore
+						</p>
+						<p class="slider-footer-text">
+							Approfondisci
+						</p>
+					</div>
+					<div class="slider-column hidden c3">
+						<h2>Scopri la nuova collezione</h2>
+						<p class="slider-text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor dolore
+						</p>
+						<p class="slider-footer-text">
+							Approfondisci
+						</p>
+					</div>
+					<div class="open-block" onclick="openBar();">
+						<button class="open-block-button">
+							<img src="freccia.png" alt="open info"/>
+						</button>
+					</div>
+				</div>
+			</section>
+
+			<section id="content">
+				<div class="container">
+					<div class="column">
+						<h3>lampadari made in italy</h3>
+						<p class="content-text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+						</P>
+					</div>
+					<div class="column">
+						<h3>lampadari artigianali</h3>
+						<p class="content-text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+						</P>
+					</div>
+					<div class="column">
+						<h3>45 anni di esperienza</h3>
+						<p class="content-text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+						</P>
+					</div>
+					<div class="column">
+						<h3>newsletter</h3>
+						<form>
+							<input type="text" name="cognome" placeholder="Nome e Cognome" class="text-field"/>
+							<input type="text" name="email" placeholder="Email" class="text-field"/>
+							<input type="checkbox" name="agree" class="check"/>
+							<div class="agree-text">
+								Acconsento al trattamento dei dati
+							</div>
+							<button class="ok-button">
+								iscriviti
+							</button>
+						</form>
+					</div>
+				</div>
+			</section>
+
+			<footer>
+				<div class="container">
+					<ul class="contacts">
+						<li>MMLAMPADARI srl</li>
+						<li>Via Feltrina 00</li>
+						<li>31111 Pederobba (TV)</li>
+						<li>0423.123456</li>
+						<li>info@mmlampadari.mm</li>
+						<li>P.IVA 04123456789</li>	
+					</ul>
+					<div class="icon">
+						<img src="images/facebook.png" alt="facebook" />
+					</div>
+					<div class="icon">
+						<img src="images/instagram.png" alt="instagram" />
+					</div>
+					<div class="icon">
+						<img src="images/p.png" alt="pinterest" />
+					</div>
+					<ul class="langs">
+						<li>ita</li>
+						<li>eng</li>
+						<li>deu</li>
+						<li>pyc</li>
+					</ul>
+				</div>	
+			</footer>
+		</div>
+
+	</body>
+</html>

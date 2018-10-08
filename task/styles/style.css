@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+* {
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #ffffff;
+}
+
+a:hover {
+	color: #e2d1a6;
+	font-weight: bold;
+}
+
+a:active {
+	color: #cc624c;
+	font-weight: bold;
+}
+
+body {
+	background: #353436;
+	font-family: 'Open Sans';
+	color: #ffffff;
+}
+
+.main {
+	margin: 0 auto;
+	z-index: 1;
+}
+
+.modal-window {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 9999;
+	background: #000000;
+}
+
+.container {
+	width: 100%;
+	max-width: 1600px;
+	margin: 0 auto;
+}
+
+header {
+	width: 100%;
+	background: #353436;
+}
+
+#slider {
+	height: 1074px;
+	width: 100%;
+	background: url(../images/slider.png) no-repeat;
+	background-size: cover;
+}
+
+.logo {
+	float: left;
+	width: 50%;
+	padding: 0px 0px 22px 20px;
+	box-sizing: border-box;
+	background: #353436;
+}
+
+nav {
+	float: right;
+	width: 50%;
+	padding: 66px 0px 22px 0px;
+	box-sizing: border-box;
+	background: #353436;
+}
+
+nav .main-menu {
+	float: right;
+}
+
+.container::after {
+  clear: both;
+}
+
+nav li ul {
+	display: none;
+	margin: 0px;
+	position: absolute;
+	left: -1px;
+	width: 10em;
+}
+
+nav li {
+	position: relative;
+	float: left;
+	list-style-type: none;
+	text-transform: uppercase;
+}
+
+.main-menu-link {
+	padding-left: 27px;
+}
+
+nav ul li:hover ul, nav ul li ul:hover{
+	display: block;
+	background: #353436;
+	padding: 39px 0px 0px 0px;
+}
+
+.modal-window-button {
+	text-transform: uppercase;
+	background: url(../images/area_reservata_lock.png) right no-repeat;
+	padding: 7px 18px 5px 0px;
+	text-align: right;
+}
+
+.main-menu ul li+li {
+	width: 124px;
+	border-top: 1px solid white;
+}
+
+.main-menu ul li {
+	padding: 7px 0px 7px 16px;
+	margin: 0px 0px 0px 11px;
+}
+
+.headline {
+	float: right;
+	margin: 250px 0px;
+	background: #ffffff;
+	opacity: 85%;
+	color: #000000;
+	padding: 23px 30px;
+	width: 31%;
+}
+
+h1 {
+	font: bold italic 30pt 'Playfair Display';
+	text-transform: uppercase;
+	padding-bottom: 30px;
+}
+
+.headline p {
+	font: 18pt 'Open Sans';
+}
+
+.open-block {
+	max-width: 60px;
+	margin: 0 auto;
+	padding-top: 1000px;
+}
+
+.slider-column {
+	float: left;
+	width: 33.333333%;
+	margin-top: 965px;
+	padding: 20px 18px 8px 15px;
+	box-sizing: border-box;
+	color: #000000;
+}
+
+.hidden {
+	display: none;
+}
+
+h2 {
+	font: bolder 28pt 'PlayFair Display';
+	padding-bottom: 10px;
+	height: 108px;
+}
+
+.slider-text {
+	font: 16pt 'Open Sans';
+	padding-bottom: 18px;
+}
+
+.slider-footer-text {
+	font: 18pt 'Open Sans';
+	text-align: right;
+}
+
+.c1 {
+	background: #e2d1a6;
+}
+
+.c1 .slider-footer-text {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+.c2 {
+	background: #ffffff;
+}
+
+.c3 {
+	background: #000000;
+	color: #ffffff;
+}
+
+#content {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.column {
+	float: left;
+	width: 300px;
+	box-sizing: border-box;
+	padding: 40px 18px 0px 27px;
+}
+
+h3 {
+	text-transform: uppercase;
+	font: bold 14pt 'PlayFair Display';
+	padding-bottom: 25px;
+}
+
+.content-text {
+	font: lighter 12pt 'Open Sans';
+}
+
+.text-field {
+	width: 100%;
+	color: #8c8c8c;
+	font: 14pt 'Open Sans';
+	padding: 10px 0px;
+	margin-bottom: 10px;
+}
+
+.ok-button {
+	width: 100%;
+	padding: 10px 0px;
+	background: #000000;
+	color: #ffffff;
+	text-transform: uppercase;
+	font: 18pt 'Open Sans';
+	border: none;
+	margin-top: 10px;
+}
+
+.check {
+	display: block;
+	float: left;
+}
+
+.agree-text {
+	font: 10pt 'Open Sans';
+	color: #b5b4b4;
+	position: relative;
+	top: -2px;
+	left: 5px;
+}
+
+footer {
+	margin-top: 285px;
+	height: 50px;
+	/*background: blue;*/
+}
+
+.contacts {
+	float: left;
+	padding: 30px 0px 20px 0px;
+	margin-right: 215px;
+}
+
+.contacts li {
+	float: left;
+	list-style: none;
+	padding: 0px 14px 0px 0px;
+	font: 12pt 'Open Sans';
+}
+
+.icon {
+	float: left;
+	padding: 30px 10px 20px 0px;
+}
+
+.langs {
+	float: right;
+	padding: 30px 0px 20px 0px;
+}
+
+.langs li {
+	float: left;
+	list-style: none;
+	padding: 0px 10px;
+	font: 14pt 'Open Sans';
+	text-transform: uppercase;
+}
+
+.langs li+li {
+	border-left: 1px solid white;
+}
